@@ -1,4 +1,4 @@
-update=Sun 21 Feb 2016 12:03:18 PM CST
+update=Tue 23 Aug 2016 03:31:30 PM CDT
 version=1
 last_client=kicad
 [pcbnew]
@@ -62,3 +62,6 @@ LibName30=valves
 LibName31=AMC7812SPAPR
 LibName32=converted/linear2
 LibName33=converted/supply
+LibName34=diffamp
+LibName35=TPIC2810
+LibName36=vmemega

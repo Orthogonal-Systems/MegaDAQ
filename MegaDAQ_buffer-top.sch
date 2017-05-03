@@ -28,15 +28,12 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
-LIBS:AMC7812SPAPR
-LIBS:linear2
-LIBS:supply
 LIBS:megaDAQ-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 9
+Sheet 2 11
 Title ""
 Date ""
 Rev ""
@@ -58,7 +55,7 @@ Text HLabel 9550 6050 2    60   Input ~ 0
 Aout[0..11]
 Text Label 8900 6050 0    60   ~ 0
 DACout[0..11]
-Text Label 1500 1175 2    60   ~ 0
+Text Label 1200 1175 0    60   ~ 0
 Ain+[0..15]
 Text Label 1725 950  2    60   ~ 0
 Ain-[0..15]
@@ -110,170 +107,6 @@ Text Label 4325 2075 2    60   ~ 0
 ADC2
 Text Label 4325 2325 2    60   ~ 0
 ADC3
-$Sheet
-S 2450 2900 1200 1175
-U 56CE0FBC
-F0 "buffer1" 60
-F1 "MegaDAQ_buffering.sch" 60
-F2 "ADC0" I R 3650 3075 60 
-F3 "AIN-0" I L 2450 3025 60 
-F4 "AIN+0" I L 2450 3125 60 
-F5 "AIN-1" I L 2450 3300 60 
-F6 "AIN-2" I L 2450 3575 60 
-F7 "AIN-3" I L 2450 3825 60 
-F8 "AIN+1" I L 2450 3400 60 
-F9 "AIN+2" I L 2450 3675 60 
-F10 "AIN+3" I L 2450 3925 60 
-F11 "ADC1" I R 3650 3350 60 
-F12 "ADC2" I R 3650 3625 60 
-F13 "ADC3" I R 3650 3875 60 
-F14 "AV_EE" I R 3650 4000 60 
-F15 "AV_CC" I R 3650 2975 60 
-$EndSheet
-Entry Wire Line
-	1750 2925 1850 3025
-Entry Wire Line
-	1500 3000 1600 3100
-Entry Wire Line
-	1750 3200 1850 3300
-Entry Wire Line
-	1750 3475 1850 3575
-Entry Wire Line
-	1500 3300 1600 3400
-Entry Wire Line
-	1500 3575 1600 3675
-Entry Wire Line
-	1750 3725 1850 3825
-Entry Wire Line
-	1500 3825 1600 3925
-Text Label 1900 3025 0    60   ~ 0
-Ain-4
-Text Label 1900 3300 0    60   ~ 0
-Ain-5
-Text Label 1900 3575 0    60   ~ 0
-Ain-6
-Text Label 1900 3825 0    60   ~ 0
-Ain-7
-Text Label 1800 3100 0    60   ~ 0
-Ain+4
-Text Label 1800 3400 0    60   ~ 0
-Ain+5
-Text Label 1800 3675 0    60   ~ 0
-Ain+6
-Text Label 1800 3925 0    60   ~ 0
-Ain+7
-Entry Wire Line
-	4500 3075 4600 3175
-Entry Wire Line
-	4500 3350 4600 3450
-Entry Wire Line
-	4500 3625 4600 3725
-Entry Wire Line
-	4500 3875 4600 3975
-Text Label 4325 3075 2    60   ~ 0
-ADC4
-Text Label 4325 3350 2    60   ~ 0
-ADC5
-Text Label 4325 3625 2    60   ~ 0
-ADC6
-Text Label 4325 3875 2    60   ~ 0
-ADC7
-Entry Wire Line
-	1750 4300 1850 4400
-Entry Wire Line
-	1500 4375 1600 4475
-Entry Wire Line
-	1750 4575 1850 4675
-Entry Wire Line
-	1750 4850 1850 4950
-Entry Wire Line
-	1500 4675 1600 4775
-Entry Wire Line
-	1500 4950 1600 5050
-Entry Wire Line
-	1750 5100 1850 5200
-Entry Wire Line
-	1500 5200 1600 5300
-Text Label 1900 4400 0    60   ~ 0
-Ain-8
-Text Label 1900 4675 0    60   ~ 0
-Ain-9
-Text Label 1900 4950 0    60   ~ 0
-Ain-10
-Text Label 1900 5200 0    60   ~ 0
-Ain-11
-Text Label 1800 4475 0    60   ~ 0
-Ain+8
-Text Label 1800 4775 0    60   ~ 0
-Ain+9
-Text Label 1800 5050 0    60   ~ 0
-Ain+10
-Text Label 1800 5300 0    60   ~ 0
-Ain+11
-Entry Wire Line
-	4500 4450 4600 4550
-Entry Wire Line
-	4500 4725 4600 4825
-Entry Wire Line
-	4500 5000 4600 5100
-Entry Wire Line
-	4500 5250 4600 5350
-Text Label 4325 4450 2    60   ~ 0
-ADC8
-Text Label 4325 4725 2    60   ~ 0
-ADC9
-Text Label 4325 5000 2    60   ~ 0
-ADC10
-Text Label 4325 5250 2    60   ~ 0
-ADC11
-Entry Wire Line
-	1750 5850 1850 5950
-Entry Wire Line
-	1500 5925 1600 6025
-Entry Wire Line
-	1750 6125 1850 6225
-Entry Wire Line
-	1750 6400 1850 6500
-Entry Wire Line
-	1500 6225 1600 6325
-Entry Wire Line
-	1500 6500 1600 6600
-Entry Wire Line
-	1750 6650 1850 6750
-Entry Wire Line
-	1500 6750 1600 6850
-Text Label 1900 5950 0    60   ~ 0
-Ain-12
-Text Label 1900 6225 0    60   ~ 0
-Ain-13
-Text Label 1900 6500 0    60   ~ 0
-Ain-14
-Text Label 1900 6750 0    60   ~ 0
-Ain-15
-Text Label 1800 6025 0    60   ~ 0
-Ain+12
-Text Label 1800 6325 0    60   ~ 0
-Ain+13
-Text Label 1800 6600 0    60   ~ 0
-Ain+14
-Text Label 1800 6850 0    60   ~ 0
-Ain+15
-Entry Wire Line
-	4500 6000 4600 6100
-Entry Wire Line
-	4500 6275 4600 6375
-Entry Wire Line
-	4500 6550 4600 6650
-Entry Wire Line
-	4500 6800 4600 6900
-Text Label 4325 6000 2    60   ~ 0
-ADC12
-Text Label 4325 6275 2    60   ~ 0
-ADC13
-Text Label 4325 6550 2    60   ~ 0
-ADC14
-Text Label 4325 6800 2    60   ~ 0
-ADC15
 Text Label 4675 7075 0    60   ~ 0
 ADC[0..15]
 $Sheet
@@ -390,13 +223,9 @@ Text Label 8325 5750 0    60   ~ 0
 DACout11
 Text Label 6375 1575 0    60   ~ 0
 DACin[0..15]
-Text Label 4025 1425 2    60   ~ 0
-AV_CC
-Text Label 3975 2975 2    60   ~ 0
+Text Label 4250 1425 2    60   ~ 0
 AV_CC
 Text Label 3975 2450 2    60   ~ 0
-AV_EE
-Text Label 4000 4000 2    60   ~ 0
 AV_EE
 Text Label 5300 775  2    60   ~ 0
 AV_CC
@@ -405,54 +234,6 @@ AV_CC
 Text Label 5275 975  2    60   ~ 0
 AV_EE
 Text HLabel 5275 975  2    60   Input ~ 0
-AV_EE
-$Sheet
-S 2450 4275 1200 1175
-U 56D1FDE5
-F0 "buffer2" 60
-F1 "MegaDAQ_buffering.sch" 60
-F2 "ADC0" I R 3650 4450 60 
-F3 "AIN-0" I L 2450 4400 60 
-F4 "AIN+0" I L 2450 4500 60 
-F5 "AIN-1" I L 2450 4675 60 
-F6 "AIN-2" I L 2450 4950 60 
-F7 "AIN-3" I L 2450 5200 60 
-F8 "AIN+1" I L 2450 4775 60 
-F9 "AIN+2" I L 2450 5050 60 
-F10 "AIN+3" I L 2450 5300 60 
-F11 "ADC1" I R 3650 4725 60 
-F12 "ADC2" I R 3650 5000 60 
-F13 "ADC3" I R 3650 5250 60 
-F14 "AV_EE" I R 3650 5375 60 
-F15 "AV_CC" I R 3650 4350 60 
-$EndSheet
-$Sheet
-S 2450 5825 1200 1175
-U 56D20A2B
-F0 "buffer3" 60
-F1 "MegaDAQ_buffering.sch" 60
-F2 "ADC0" I R 3650 6000 60 
-F3 "AIN-0" I L 2450 5950 60 
-F4 "AIN+0" I L 2450 6050 60 
-F5 "AIN-1" I L 2450 6225 60 
-F6 "AIN-2" I L 2450 6500 60 
-F7 "AIN-3" I L 2450 6750 60 
-F8 "AIN+1" I L 2450 6325 60 
-F9 "AIN+2" I L 2450 6600 60 
-F10 "AIN+3" I L 2450 6850 60 
-F11 "ADC1" I R 3650 6275 60 
-F12 "ADC2" I R 3650 6550 60 
-F13 "ADC3" I R 3650 6800 60 
-F14 "AV_EE" I R 3650 6925 60 
-F15 "AV_CC" I R 3650 5900 60 
-$EndSheet
-Text Label 4000 4350 2    60   ~ 0
-AV_CC
-Text Label 4000 5375 2    60   ~ 0
-AV_EE
-Text Label 4000 5900 2    60   ~ 0
-AV_CC
-Text Label 4000 6925 2    60   ~ 0
 AV_EE
 $Sheet
 S 7000 3425 1275 1150
@@ -491,9 +272,9 @@ Wire Bus Line
 Wire Bus Line
 	1200 1175 1500 1175
 Wire Bus Line
-	1500 1175 1500 6750
+	1500 1175 1500 9350
 Wire Bus Line
-	4600 1625 4600 7075
+	4600 1625 4600 9500
 Wire Bus Line
 	4600 7075 5225 7075
 Wire Bus Line
@@ -530,86 +311,8 @@ Wire Wire Line
 	4500 2075 3650 2075
 Wire Wire Line
 	4500 2325 3650 2325
-Wire Wire Line
-	1850 3025 2450 3025
-Wire Wire Line
-	1600 3100 2450 3100
-Wire Wire Line
-	2450 3100 2450 3125
-Wire Wire Line
-	1850 3300 2450 3300
-Wire Wire Line
-	1850 3575 2450 3575
-Wire Wire Line
-	1850 3825 2450 3825
-Wire Wire Line
-	1600 3400 2450 3400
-Wire Wire Line
-	1600 3675 2450 3675
-Wire Wire Line
-	1600 3925 2450 3925
-Wire Wire Line
-	4500 3075 3650 3075
-Wire Wire Line
-	4500 3350 3650 3350
-Wire Wire Line
-	4500 3625 3650 3625
-Wire Wire Line
-	4500 3875 3650 3875
-Wire Wire Line
-	1850 4400 2450 4400
-Wire Wire Line
-	1600 4475 2450 4475
-Wire Wire Line
-	2450 4475 2450 4500
-Wire Wire Line
-	1850 4675 2450 4675
-Wire Wire Line
-	1850 4950 2450 4950
-Wire Wire Line
-	1850 5200 2450 5200
-Wire Wire Line
-	1600 4775 2450 4775
-Wire Wire Line
-	1600 5050 2450 5050
-Wire Wire Line
-	1600 5300 2450 5300
-Wire Wire Line
-	4500 4450 3650 4450
-Wire Wire Line
-	4500 4725 3650 4725
-Wire Wire Line
-	4500 5000 3650 5000
-Wire Wire Line
-	4500 5250 3650 5250
-Wire Wire Line
-	1850 5950 2450 5950
-Wire Wire Line
-	1600 6025 2450 6025
-Wire Wire Line
-	2450 6025 2450 6050
-Wire Wire Line
-	1850 6225 2450 6225
-Wire Wire Line
-	1850 6500 2450 6500
-Wire Wire Line
-	1850 6750 2450 6750
-Wire Wire Line
-	1600 6325 2450 6325
-Wire Wire Line
-	1600 6600 2450 6600
-Wire Wire Line
-	1600 6850 2450 6850
-Wire Wire Line
-	4500 6000 3650 6000
-Wire Wire Line
-	4500 6275 3650 6275
-Wire Wire Line
-	4500 6550 3650 6550
-Wire Wire Line
-	4500 6800 3650 6800
 Wire Bus Line
-	1750 950  1750 6650
+	1750 950  1750 9250
 Wire Wire Line
 	6475 1975 7000 1975
 Wire Wire Line
@@ -659,25 +362,13 @@ Wire Wire Line
 Wire Wire Line
 	8800 5025 8275 5025
 Wire Wire Line
-	3650 2975 3975 2975
-Wire Wire Line
-	3650 4000 4000 4000
-Wire Wire Line
 	3650 2450 3975 2450
 Wire Wire Line
-	3650 1425 4025 1425
+	3650 1425 4250 1425
 Wire Wire Line
 	4925 775  5300 775 
 Wire Wire Line
 	4950 975  5275 975 
-Wire Wire Line
-	3650 4350 4000 4350
-Wire Wire Line
-	3650 5375 4000 5375
-Wire Wire Line
-	3650 5900 4000 5900
-Wire Wire Line
-	3650 6925 4000 6925
 Text Label 7000 2875 2    60   ~ 0
 AV_CC
 Wire Wire Line
@@ -702,8 +393,382 @@ Text Label 8625 5925 2    60   ~ 0
 AV_EE
 Wire Wire Line
 	8275 5925 8625 5925
+Text HLabel 1200 1550 0    60   Input ~ 0
+Ain_os[0..15]
+Wire Bus Line
+	1200 1550 1325 1550
+Wire Bus Line
+	1325 1550 1325 10200
+Text Label 1325 1725 2    60   ~ 0
+Ain_os[0..15]
+Entry Wire Line
+	1325 2750 1425 2850
+Entry Wire Line
+	1325 2875 1425 2975
+Entry Wire Line
+	1325 3000 1425 3100
+Entry Wire Line
+	1325 3125 1425 3225
+Wire Wire Line
+	1425 2850 2450 2850
+Wire Wire Line
+	1425 2975 2450 2975
+Wire Wire Line
+	1425 3100 2450 3100
+Wire Wire Line
+	1425 3225 2450 3225
+Text Label 1850 2850 0    60   ~ 0
+Ain_os0
+Text Label 1850 2975 0    60   ~ 0
+Ain_os1
+Text Label 1850 3100 0    60   ~ 0
+Ain_os2
+Text Label 1850 3225 0    60   ~ 0
+Ain_os3
+Entry Wire Line
+	1750 3550 1850 3650
+Entry Wire Line
+	1750 3825 1850 3925
+Entry Wire Line
+	1750 4100 1850 4200
+Entry Wire Line
+	1750 4350 1850 4450
+Text Label 1900 3650 0    60   ~ 0
+Ain-4
+Text Label 1900 3925 0    60   ~ 0
+Ain-5
+Text Label 1900 4200 0    60   ~ 0
+Ain-6
+Text Label 1900 4450 0    60   ~ 0
+Ain-7
+Text Label 1800 3725 0    60   ~ 0
+Ain+4
+Text Label 1800 4025 0    60   ~ 0
+Ain+5
+Text Label 1800 4300 0    60   ~ 0
+Ain+6
+Text Label 1800 4550 0    60   ~ 0
+Ain+7
+Entry Wire Line
+	4500 3700 4600 3800
+Entry Wire Line
+	4500 3975 4600 4075
+Entry Wire Line
+	4500 4250 4600 4350
+Entry Wire Line
+	4500 4500 4600 4600
+Text Label 4325 3700 2    60   ~ 0
+ADC4
+Text Label 4325 3975 2    60   ~ 0
+ADC5
+Text Label 4325 4250 2    60   ~ 0
+ADC6
+Text Label 4325 4500 2    60   ~ 0
+ADC7
+Text Label 4250 3600 2    60   ~ 0
+AV_CC
+Text Label 3975 4625 2    60   ~ 0
+AV_EE
+Wire Wire Line
+	1850 3650 2450 3650
+Wire Wire Line
+	1600 3725 2450 3725
+Wire Wire Line
+	2450 3725 2450 3750
+Wire Wire Line
+	1850 3925 2450 3925
+Wire Wire Line
+	1850 4200 2450 4200
+Wire Wire Line
+	1850 4450 2450 4450
+Wire Wire Line
+	1600 4025 2450 4025
+Wire Wire Line
+	1600 4300 2450 4300
+Wire Wire Line
+	1600 4550 2450 4550
+Wire Wire Line
+	4500 3700 3650 3700
+Wire Wire Line
+	4500 3975 3650 3975
+Wire Wire Line
+	4500 4250 3650 4250
+Wire Wire Line
+	4500 4500 3650 4500
+Wire Wire Line
+	3650 4625 3975 4625
+Wire Wire Line
+	3650 3600 4250 3600
+Wire Wire Line
+	1425 5025 2450 5025
+Wire Wire Line
+	1425 5150 2450 5150
+Wire Wire Line
+	1425 5275 2450 5275
+Wire Wire Line
+	1425 5400 2450 5400
+Text Label 1850 5025 0    60   ~ 0
+Ain_os4
+Text Label 1850 5150 0    60   ~ 0
+Ain_os5
+Text Label 1850 5275 0    60   ~ 0
+Ain_os6
+Text Label 1850 5400 0    60   ~ 0
+Ain_os7
+Entry Wire Line
+	1500 3625 1600 3725
+Entry Wire Line
+	1500 3925 1600 4025
+Entry Wire Line
+	1500 4200 1600 4300
+Entry Wire Line
+	1500 4450 1600 4550
+Entry Wire Line
+	1325 7075 1425 7175
+Entry Wire Line
+	1325 7200 1425 7300
+Entry Wire Line
+	1325 7325 1425 7425
+Entry Wire Line
+	1325 7450 1425 7550
+Entry Wire Line
+	1750 5700 1850 5800
+Entry Wire Line
+	1750 5975 1850 6075
+Entry Wire Line
+	1750 6250 1850 6350
+Entry Wire Line
+	1750 6500 1850 6600
+Text Label 1900 5800 0    60   ~ 0
+Ain-8
+Text Label 1900 6075 0    60   ~ 0
+Ain-9
+Text Label 1900 6350 0    60   ~ 0
+Ain-10
+Text Label 1900 6600 0    60   ~ 0
+Ain-11
+Text Label 1800 5875 0    60   ~ 0
+Ain+8
+Text Label 1800 6175 0    60   ~ 0
+Ain+9
+Text Label 1800 6450 0    60   ~ 0
+Ain+10
+Text Label 1800 6700 0    60   ~ 0
+Ain+11
+Entry Wire Line
+	4500 5850 4600 5950
+Entry Wire Line
+	4500 6125 4600 6225
+Entry Wire Line
+	4500 6400 4600 6500
+Entry Wire Line
+	4500 6650 4600 6750
+Text Label 4325 5850 2    60   ~ 0
+ADC8
+Text Label 4325 6125 2    60   ~ 0
+ADC9
+Text Label 4325 6400 2    60   ~ 0
+ADC10
+Text Label 4325 6650 2    60   ~ 0
+ADC11
+Text Label 4250 5750 2    60   ~ 0
+AV_CC
+Text Label 3975 6775 2    60   ~ 0
+AV_EE
+Wire Wire Line
+	1850 5800 2450 5800
+Wire Wire Line
+	1600 5875 2450 5875
+Wire Wire Line
+	2450 5875 2450 5900
+Wire Wire Line
+	1850 6075 2450 6075
+Wire Wire Line
+	1850 6350 2450 6350
+Wire Wire Line
+	1850 6600 2450 6600
+Wire Wire Line
+	1600 6175 2450 6175
+Wire Wire Line
+	1600 6450 2450 6450
+Wire Wire Line
+	1600 6700 2450 6700
+Wire Wire Line
+	4500 5850 3650 5850
+Wire Wire Line
+	4500 6125 3650 6125
+Wire Wire Line
+	4500 6400 3650 6400
+Wire Wire Line
+	4500 6650 3650 6650
+Wire Wire Line
+	3650 6775 3975 6775
+Wire Wire Line
+	3650 5750 4250 5750
+Wire Wire Line
+	1425 7175 2450 7175
+Wire Wire Line
+	1425 7300 2450 7300
+Wire Wire Line
+	1425 7425 2450 7425
+Wire Wire Line
+	1425 7550 2450 7550
+Text Label 1850 7175 0    60   ~ 0
+Ain_os8
+Text Label 1850 7300 0    60   ~ 0
+Ain_os9
+Text Label 1850 7425 0    60   ~ 0
+Ain_os10
+Text Label 1850 7550 0    60   ~ 0
+Ain_os11
+Entry Wire Line
+	1500 5775 1600 5875
+Entry Wire Line
+	1500 6075 1600 6175
+Entry Wire Line
+	1500 6350 1600 6450
+Entry Wire Line
+	1500 6600 1600 6700
+Entry Wire Line
+	1325 4925 1425 5025
+Entry Wire Line
+	1325 5050 1425 5150
+Entry Wire Line
+	1325 5175 1425 5275
+Entry Wire Line
+	1325 5300 1425 5400
+Entry Wire Line
+	1750 8450 1850 8550
+Entry Wire Line
+	1750 8725 1850 8825
+Entry Wire Line
+	1750 9000 1850 9100
+Entry Wire Line
+	1750 9250 1850 9350
+Text Label 1900 8550 0    60   ~ 0
+Ain-12
+Text Label 1900 8825 0    60   ~ 0
+Ain-13
+Text Label 1900 9100 0    60   ~ 0
+Ain-14
+Text Label 1900 9350 0    60   ~ 0
+Ain-15
+Text Label 1800 8625 0    60   ~ 0
+Ain+12
+Text Label 1800 8925 0    60   ~ 0
+Ain+13
+Text Label 1800 9200 0    60   ~ 0
+Ain+14
+Text Label 1800 9450 0    60   ~ 0
+Ain+15
+Entry Wire Line
+	4500 8600 4600 8700
+Entry Wire Line
+	4500 8875 4600 8975
+Entry Wire Line
+	4500 9150 4600 9250
+Entry Wire Line
+	4500 9400 4600 9500
+Text Label 4325 8600 2    60   ~ 0
+ADC12
+Text Label 4325 8875 2    60   ~ 0
+ADC13
+Text Label 4325 9150 2    60   ~ 0
+ADC14
+Text Label 4325 9400 2    60   ~ 0
+ADC15
+Text Label 4250 8500 2    60   ~ 0
+AV_CC
+Text Label 3975 9525 2    60   ~ 0
+AV_EE
+Wire Wire Line
+	1850 8550 2450 8550
+Wire Wire Line
+	1600 8625 2450 8625
+Wire Wire Line
+	2450 8625 2450 8650
+Wire Wire Line
+	1850 8825 2450 8825
+Wire Wire Line
+	1850 9100 2450 9100
+Wire Wire Line
+	1850 9350 2450 9350
+Wire Wire Line
+	1600 8925 2450 8925
+Wire Wire Line
+	1600 9200 2450 9200
+Wire Wire Line
+	1600 9450 2450 9450
+Wire Wire Line
+	4500 8600 3650 8600
+Wire Wire Line
+	4500 8875 3650 8875
+Wire Wire Line
+	4500 9150 3650 9150
+Wire Wire Line
+	4500 9400 3650 9400
+Wire Wire Line
+	3650 9525 3975 9525
+Wire Wire Line
+	3650 8500 4250 8500
 $Sheet
-S 2450 1350 1200 1175
+S 2450 8425 1200 1975
+U 5782FABD
+F0 "buffer3" 60
+F1 "MegaDAQ_buffering.sch" 60
+F2 "ADC0" I R 3650 8600 60 
+F3 "AIN-0" I L 2450 8550 60 
+F4 "AIN+0" I L 2450 8650 60 
+F5 "AIN-1" I L 2450 8825 60 
+F6 "AIN-2" I L 2450 9100 60 
+F7 "AIN-3" I L 2450 9350 60 
+F8 "AIN+1" I L 2450 8925 60 
+F9 "AIN+2" I L 2450 9200 60 
+F10 "AIN+3" I L 2450 9450 60 
+F11 "ADC1" I R 3650 8875 60 
+F12 "ADC2" I R 3650 9150 60 
+F13 "ADC3" I R 3650 9400 60 
+F14 "AV_EE" I R 3650 9525 60 
+F15 "AV_CC" I R 3650 8500 60 
+F16 "ADC_OFFSET_3" I L 2450 10300 60 
+F17 "ADC_OFFSET_2" I L 2450 10175 60 
+F18 "ADC_OFFSET_1" I L 2450 10050 60 
+F19 "ADC_OFFSET_0" I L 2450 9925 60 
+$EndSheet
+Wire Wire Line
+	1425 9925 2450 9925
+Wire Wire Line
+	1425 10050 2450 10050
+Wire Wire Line
+	1425 10175 2450 10175
+Wire Wire Line
+	1425 10300 2450 10300
+Text Label 1850 9925 0    60   ~ 0
+Ain_os12
+Text Label 1850 10050 0    60   ~ 0
+Ain_os13
+Text Label 1850 10175 0    60   ~ 0
+Ain_os14
+Text Label 1850 10300 0    60   ~ 0
+Ain_os15
+Entry Wire Line
+	1325 10200 1425 10300
+Entry Wire Line
+	1325 10075 1425 10175
+Entry Wire Line
+	1325 9950 1425 10050
+Entry Wire Line
+	1325 9825 1425 9925
+Entry Wire Line
+	1500 8825 1600 8925
+Entry Wire Line
+	1500 9100 1600 9200
+Entry Wire Line
+	1500 9350 1600 9450
+Entry Wire Line
+	1500 8525 1600 8625
+$Sheet
+S 2450 1350 1200 1975
 U 56DF94E7
 F0 "buffer0" 60
 F1 "MegaDAQ_buffering.sch" 60
@@ -721,5 +786,57 @@ F12 "ADC2" I R 3650 2075 60
 F13 "ADC3" I R 3650 2325 60 
 F14 "AV_EE" I R 3650 2450 60 
 F15 "AV_CC" I R 3650 1425 60 
+F16 "ADC_OFFSET_3" I L 2450 3225 60 
+F17 "ADC_OFFSET_2" I L 2450 3100 60 
+F18 "ADC_OFFSET_1" I L 2450 2975 60 
+F19 "ADC_OFFSET_0" I L 2450 2850 60 
+$EndSheet
+$Sheet
+S 2450 5675 1200 1975
+U 5777FE33
+F0 "buffer2" 60
+F1 "MegaDAQ_buffering.sch" 60
+F2 "ADC0" I R 3650 5850 60 
+F3 "AIN-0" I L 2450 5800 60 
+F4 "AIN+0" I L 2450 5900 60 
+F5 "AIN-1" I L 2450 6075 60 
+F6 "AIN-2" I L 2450 6350 60 
+F7 "AIN-3" I L 2450 6600 60 
+F8 "AIN+1" I L 2450 6175 60 
+F9 "AIN+2" I L 2450 6450 60 
+F10 "AIN+3" I L 2450 6700 60 
+F11 "ADC1" I R 3650 6125 60 
+F12 "ADC2" I R 3650 6400 60 
+F13 "ADC3" I R 3650 6650 60 
+F14 "AV_EE" I R 3650 6775 60 
+F15 "AV_CC" I R 3650 5750 60 
+F16 "ADC_OFFSET_3" I L 2450 7550 60 
+F17 "ADC_OFFSET_2" I L 2450 7425 60 
+F18 "ADC_OFFSET_1" I L 2450 7300 60 
+F19 "ADC_OFFSET_0" I L 2450 7175 60 
+$EndSheet
+$Sheet
+S 2450 3525 1200 1975
+U 5777CCEB
+F0 "buffer1" 60
+F1 "MegaDAQ_buffering.sch" 60
+F2 "ADC0" I R 3650 3700 60 
+F3 "AIN-0" I L 2450 3650 60 
+F4 "AIN+0" I L 2450 3750 60 
+F5 "AIN-1" I L 2450 3925 60 
+F6 "AIN-2" I L 2450 4200 60 
+F7 "AIN-3" I L 2450 4450 60 
+F8 "AIN+1" I L 2450 4025 60 
+F9 "AIN+2" I L 2450 4300 60 
+F10 "AIN+3" I L 2450 4550 60 
+F11 "ADC1" I R 3650 3975 60 
+F12 "ADC2" I R 3650 4250 60 
+F13 "ADC3" I R 3650 4500 60 
+F14 "AV_EE" I R 3650 4625 60 
+F15 "AV_CC" I R 3650 3600 60 
+F16 "ADC_OFFSET_3" I L 2450 5400 60 
+F17 "ADC_OFFSET_2" I L 2450 5275 60 
+F18 "ADC_OFFSET_1" I L 2450 5150 60 
+F19 "ADC_OFFSET_0" I L 2450 5025 60 
 $EndSheet
 $EndSCHEMATC
